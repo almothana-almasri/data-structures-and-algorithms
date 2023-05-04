@@ -4,4 +4,7 @@ This repository contains various code challanges about Data Structures and algor
 
 ## Table of Contents
 
-1. [Array Reverse](code_challange_class_01/array_reverse.md)
+| #  | Challenge                                                |
+|-|-|
+| 1  | [Reverse an array.](code-challange-class01/array_reverse.md)|
+| 2  | [Insert and shift an array in middle at index.](code-challange-class02/insert-shift-array.md)|
