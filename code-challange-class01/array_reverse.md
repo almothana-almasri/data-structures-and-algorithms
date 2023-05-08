@@ -1,10 +1,10 @@
-&leftarrow; [Back to Home](../README.md)
+[&leftarrow; Back to Home](../README.md)
 # Code Challenge: Array Reverse
 Reverse an array without using built-in methods
 
 ## Whiteboard Process
 
-![Whiteboard Solution](../assets/Screenshot%20(69).png)
+![Whiteboard](../assets/array_reverse.png)
 
 ## Approach & Efficiency
 Loop through the array from the end to the beginning and push the elements into a new array. Time complexity: O(n^2), Space complexity: O(n)
