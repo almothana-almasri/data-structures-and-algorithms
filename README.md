@@ -8,3 +8,4 @@ This repository contains various code challanges about Data Structures and algor
 |-|-|
 | 1  | [Reverse an array.](code-challange-class01/array_reverse.md)|
 | 2  | [Insert and shift an array in middle at index.](code-challange-class02/insert-shift-array.md)|
+| 3  | [Binary Search](code-challange-class03/array-binary-search.md)|
