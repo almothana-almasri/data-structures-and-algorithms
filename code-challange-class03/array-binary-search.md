@@ -12,7 +12,7 @@ NOTE: The search algorithm used in your function should be a binary search.
 
 ## Whiteboard Process
 
-![Whiteboard](../assets/array-binary-search.png)
+![Whiteboard](../assets/array-binary-search2.png)
 
 ## Approach & Efficiency
 
