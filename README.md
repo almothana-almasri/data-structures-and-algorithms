@@ -10,7 +10,7 @@ This repository contains various code challanges about Data Structures and algor
 | 2  | [Insert and shift an array in middle at index.](code-challange-class02/insert-shift-array.md) |
 | 3  | [Binary Search](code-challange-class03/array-binary-search.md) |
 | 4  |                                                          |
-| 5  | [linked-list](code-challange-class05/linked-list.md) |
+| 5  | [Implementation: Singly Linked Lists](code_challange_class05/linked-list.md) |
 | 6  |                                                          |
 | 7  |                                                          |
 | 8  |                                                          |
