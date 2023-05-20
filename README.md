@@ -12,7 +12,13 @@ This repository contains various code challanges about Data Structures and algor
 | 4  |                                                          |
 | 5  | [Implementation: Singly Linked Lists](code_challange_class05/linked-list.md) |
 | 6  | [Linked List Insertions](code_challange_class06/linked_list_insertions.md)                                                         |
-| 7  |                                                          |
+| 7  | [linked list kth](code_challange_class07/linked_list_kth.md)                                                         |
 | 8  |                                                          |
 | 9  |                                                          |
-| 10 |                                                          |
+| 10 | [stack and queue](code_challange_class10/stack_and_queue.md)                                                         |
+| 8  |                                                          |
+| 8  |                                                          |
+| 8  |                                                          |
+| 8  |                                                          |
+| 8  |                                                          |
+| 8  |                                                          |
