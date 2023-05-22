@@ -8,6 +8,8 @@ Write a function called `zipLists` that takes two linked lists as arguments and 
 
 ## Whiteboard Process
 
+![Whiteboard](../assets/CC_08_linked_list_zip.png)
+
 ## Approach & Efficiency
 
 **Approach:**
