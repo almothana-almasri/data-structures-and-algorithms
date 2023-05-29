@@ -4,10 +4,12 @@ Author: **Almothana Almasri**
 
 # Code Challenge: Linked List Implementation
 
-Challenge Type: New Implementation. 
-Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
+implementing a linked list data structure in Python. A linked list is a linear data structure composed of nodes, where each node contains a value and a pointer to the next node in the list.
 
 ---
+## Whiteboard Process
+
+![Whiteboard](../assets/CC_05_linked_list.png)
 
 ## **Approach & Efficiency**
 
