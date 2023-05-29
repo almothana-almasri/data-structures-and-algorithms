@@ -16,7 +16,7 @@ This repository contains various code challanges about Data Structures and algor
 | 8  | [Zip two linked lists.](code_challange_class08/linked_list_zip.md)                                                         |
 | 9  |                                                          |
 | 10 | [stack and queue](code_challange_class10/stack_and_queue.md)                                                         |
-| 8  |                                                          |
+| 11  | [Implement a Queue using two Stacks.](code_challange_class11/stack_queue_pseudo.md)                                                         |
 | 8  |                                                          |
 | 8  |                                                          |
 | 8  |                                                          |
