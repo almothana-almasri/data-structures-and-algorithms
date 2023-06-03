@@ -17,7 +17,7 @@ This repository contains various code challanges about Data Structures and algor
 | 9  |                                                          |
 | 10 | [stack and queue](code_challange_class10/stack_and_queue.md)                                                         |
 | 11  | [Implement a Queue using two Stacks.](code_challange_class11/stack_queue_pseudo.md)                                                         |
-| 8  |                                                          |
+| 12  | [First-in, First out Animal Shelter.](code_challange_class12/animal_shelter.md)                                                         |
 | 8  |                                                          |
 | 8  |                                                          |
 | 8  |                                                          |
