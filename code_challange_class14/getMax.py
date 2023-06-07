@@ -1,25 +1,27 @@
+from stack_and_queue import Stack
+
 class MaxStack:
     def __init__(self):
-        self.stack = []
-        self.maxStack = []
+        self.stack = Stack()
+        self.maxStack = Stack()
 
     def push(self, value):
-        self.stack.append(value)
-        if not self.maxStack or value >= self.maxStack[-1]:
-            self.maxStack.append(value)
+        self.stack.push(value)
+        if self.maxStack.is_empty() or value >= self.maxStack.peek():
+            self.maxStack.push(value)
 
     def pop(self):
-        if not self.stack:
+        if self.stack.is_empty():
             return None
         value = self.stack.pop()
-        if value == self.maxStack[-1]:
+        if value == self.maxStack.peek():
             self.maxStack.pop()
         return value
 
     def getMax(self):
-        if not self.maxStack:
+        if self.maxStack.is_empty():
             return None
-        return self.maxStack[-1]
+        return self.maxStack.peek()
     
 stack = MaxStack()
 stack.push(5)
