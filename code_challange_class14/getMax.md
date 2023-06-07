@@ -1,0 +1,1 @@
+![whiteboard](../assets/CC_14_mock_getMax.png)
