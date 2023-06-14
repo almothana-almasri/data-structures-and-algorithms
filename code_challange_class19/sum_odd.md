@@ -1,0 +1,1 @@
+![Whiteboard](../assets/CC_19_sum_odd.png)
