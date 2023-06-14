@@ -21,5 +21,5 @@ This repository contains various code challanges about Data Structures and algor
 | 13 | [Multi-bracket Validation.](code_challange_class13/stack_queue_brackets.md)                   |
 | 14 | [Get Max Mock Interview](code_challange_class14/getMax.md)                                    |
 | 15 | [Binary Tree and BST Implementation](code_challange_class15/trees.md)                         |
-| 16 |
+| 16 | [Find the Maximum Value in a Binary Tree](code_challange_class16/trees_max.md)                |
 | 17 | 
