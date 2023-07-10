@@ -6,10 +6,10 @@ This repository contains various code challanges about Data Structures and algor
 
 | #  | Challenge                                                |
 |----|----------------------------------------------------------|
-| 01 | [Reverse an array.](code-challange-class01/array_reverse.md)                                  |
-| 02 | [Insert and shift an array in middle at index.](code-challange-class02/insert-shift-array.md) |
-| 03 | [Binary Search](code-challange-class03/array-binary-search.md)                                |
-| 04 | [Whiteboard Interview](code-challange-class04/whiteboard_interview.md)                        |
+| 01 | [Reverse an array.](code_challange_class01/array_reverse.md)                                  |
+| 02 | [Insert and shift an array in middle at index.](code_challange_class02/insert-shift-array.md) |
+| 03 | [Binary Search](code_challange_class03/array-binary-search.md)                                |
+| 04 | [Whiteboard Interview](code_challange_class04/whiteboard_interview.md)                        |
 | 05 | [Implementation: Singly Linked Lists](code_challange_class05/linked-list.md)                  |
 | 06 | [Linked List Insertions](code_challange_class06/linked_list_insertions.md)                    |
 | 07 | [linked list kth](code_challange_class07/linked_list_kth.md)                                  |
