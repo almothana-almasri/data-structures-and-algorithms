@@ -22,4 +22,21 @@ This repository contains various code challanges about Data Structures and algor
 | 14 | [Get Max Mock Interview](code_challange_class14/getMax.md)                                    |
 | 15 | [Binary Tree and BST Implementation](code_challange_class15/trees.md)                         |
 | 16 | [Find the Maximum Value in a Binary Tree](code_challange_class16/trees_max.md)                |
-| 17 | [Sum of numbers in a binary tree](code_challange_class19/sum_odd.md)
+| 17 | [Sum of numbers in a binary tree](code_challange_class19/sum_odd.md)                          |
+| 26 | [Insertion Sort](code_challange_class26/insertion_sort.md)                                    |
+| 26 |                           |
+| 26 |                           |
+| 26 |                           |
+| 26 |                           |
+| 26 |                           |
+| 26 |                           |
+| 26 |                           |
+| 26 |                           |
+| 26 |                           |
+| 26 |                           |
+| 26 |                           |
+| 26 |                           |
+| 26 |                           |
+| 26 |                           |
+| 26 |                           |
+| 26 |                           |
