@@ -1,21 +1,34 @@
-def insertion_sort(arr):
-    if len(arr) <= 1:
-        return arr
+def merge_sort(arr):
+    n = len(arr)
+    
+    if n > 1:
+        mid = n // 2
+        left = arr[:mid]
+        right = arr[mid:]
+        
+        merge_sort(left)
+        merge_sort(right)
+        
+        merge(left, right, arr)
 
-    sorted_arr = [arr[0]]
-    for i in range(1, len(arr)):
-        insert(sorted_arr, arr[i])
-    return sorted_arr
+def merge(left, right, arr):
+    i = j = k = 0
 
-def insert(sorted_arr, value):
-    i = 0
-    while value > sorted_arr[i]:
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            arr[k] = left[i]
+            i += 1
+        else:
+            arr[k] = right[j]
+            j += 1
+        k += 1
+
+    while i < len(left):
+        arr[k] = left[i]
         i += 1
-        if i == len(sorted_arr):
-            break
-    while i < len(sorted_arr):
-        temp = sorted_arr[i]
-        sorted_arr[i] = value
-        value = temp
-        i += 1
-    sorted_arr.append(value)
+        k += 1
+
+    while j < len(right):
+        arr[k] = right[j]
+        j += 1
+        k += 1
