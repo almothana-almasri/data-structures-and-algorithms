@@ -1,32 +1,26 @@
+import pytest
 from code_challange_class28.comparisons.comparisons import sort_by_year, sort_by_title
 
-def test_sort_by_year():
-    movies = [
-        {'title': 'The Matrix', 'year': 1999, 'genres': ['Action', 'Sci-Fi']},
-        {'title': 'Taxi Driver', 'year': 1976, 'genres': ['Crime', 'Drama']},
-        {'title': 'The Message', 'year': 1976, 'genres': ['Biography', 'Drama', 'History']},
-        {'title': 'Amadeus', 'year': 1984, 'genres': ['Biography', 'Drama', 'History', 'Music']},
-        {'title': 'V for Vendetta', 'year': 2005, 'genres': ['Action', 'Drama', 'Sci-Fi', 'Thriller']},
-        {'title': 'The Silence of the Lambs', 'year': 1991, 'genres': ['Crime', 'Drama', 'Thriller']},
+@pytest.fixture
+def movies_data():
+    return [
+        {'title': 'The Matrix', 'year': 1999},
+        {'title': 'Taxi Driver', 'year': 1976},
+        {'title': 'The Message', 'year': 1976},
+        {'title': 'Amadeus', 'year': 1984},
+        {'title': 'V for Vendetta', 'year': 2005},
+        {'title': 'The Silence of the Lambs', 'year': 1991},
     ]
 
-    sorted_by_year = sort_by_year(movies)
+def test_sort_by_year(movies_data):
+    sorted_by_year = sort_by_year(movies_data)
 
     assert sorted_by_year[0]['year'] == 2005
     assert sorted_by_year[-1]['year'] == 1976
     assert [movie['year'] for movie in sorted_by_year] == [2005, 1999, 1991, 1984, 1976, 1976]
 
-def test_sort_by_title():
-    movies = [
-        {'title': 'The Matrix', 'year': 1999, 'genres': ['Action', 'Sci-Fi']},
-        {'title': 'Taxi Driver', 'year': 1976, 'genres': ['Crime', 'Drama']},
-        {'title': 'The Message', 'year': 1976, 'genres': ['Biography', 'Drama', 'History']},
-        {'title': 'Amadeus', 'year': 1984, 'genres': ['Biography', 'Drama', 'History', 'Music']},
-        {'title': 'V for Vendetta', 'year': 2005, 'genres': ['Action', 'Drama', 'Sci-Fi', 'Thriller']},
-        {'title': 'The Silence of the Lambs', 'year': 1991, 'genres': ['Crime', 'Drama', 'Thriller']},
-    ]
-
-    sorted_by_title = sort_by_title(movies)
+def test_sort_by_title(movies_data):
+    sorted_by_title = sort_by_title(movies_data)
 
     assert sorted_by_title[0]['title'] == 'Amadeus'
     assert sorted_by_title[-1]['title'] == 'V for Vendetta'
