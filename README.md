@@ -25,7 +25,7 @@ This repository contains various code challanges about Data Structures and algor
 | 19 | **[[Mock interview] Sum of numbers in a binary tree](code_challange_class19/sum_odd.md)**     |
 | 26 | [Insertion Sort](code_challange_class26/insertion_sort.md)                                    |
 | 27 | [Merge Sort](code_challange_class27/merge_sort.md)                                        |
-| 26 |                           |
+| 28 | [Comparisons](code_challange_class28/comparisons.md)                          |
 | 26 |                           |
 | 26 |                           |
 | 26 |                           |
