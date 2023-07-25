@@ -16,28 +16,33 @@ Return: string
 
 ## Approach
 
-1. Convert the input string to lowercase to make the word comparisons case-insensitive.
-2. Remove punctuation marks (commas and periods) from the input string.
-3. Split the input string into individual words using whitespace as the delimiter.
-4. Create an empty dictionary `word_freq` to store word frequencies.
-5. Iterate through each word in the list of words:
-   - If the word is already present in the `word_freq` dictionary, it means it's a repeated word, so return it as the first repeated word.
-   - If the word is not present in the `word_freq` dictionary, add it with a frequency of 1.
-6. If no repeated word is found during the iteration, return `None` to indicate that there are no repeated words in the input string.
+1. **Initialize Hashtable**: Create an empty Hashtable to store words that have been encountered.
+
+2. **Split Words**: Split the input string into words (assuming words are separated by spaces) and store them in a list.
+
+3. **Lowercase Conversion**: Convert each word to lowercase to perform a case-insensitive comparison and to ensure uniformity.
+
+4. **Iterate through Words**:
+    - a. **Clean Words**: For each word in the list of words, clean it by removing any non-alphanumeric characters. If the cleaned word is empty (e.g., when a word is just punctuation), ignore it and move to the next word.
+
+    - b. **Check for Repeated Words**: Check if the cleaned word is already in the Hashtable, which serves as a lookup table for repeated words.
+        - If the word is found in the Hashtable, it means it is the first repeated word in the input string. Return this word as the result.
+
+        - If the word is not found in the Hashtable, add it to the Hashtable, using the lowercase version of the word as the key for case-insensitive search.
+
+5. **Return Result**: If no repeated word is found after processing all words in the input string, return None as the result.
 
 ## Efficiency
 
-- Time Complexity: O(n)
-  - Converting the input string to lowercase: O(n)
-  - Removing punctuation marks (commas and periods): O(n)
-  - Splitting the input string into words: O(n)
-  - Iterating through each word and dictionary lookup/insertion: O(n)
-  - In the worst case, the entire process takes O(n) time, where n is the length of the input string.
+### Time Complexity: O(n + k)
 
-- Space Complexity: O(n)
-  - The `words` list to store individual words: O(n)
-  - The `word_freq` dictionary to store word frequencies: O(n)
-  - In the worst case, both the list and dictionary combined take O(n) space, where n is the number of words in the input string.
+- `n` is the number of unique words in the input string.
+- `k` is the number of words in the input string.
+
+### Space Complexity: O(n + m)
+
+- `n` is the number of unique words in the input string.
+- `m` is the length of the input string.
 
 ## Tests
 
