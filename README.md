@@ -28,8 +28,8 @@ This repository contains various code challanges about Data Structures and algor
 | 28 | [Comparisons](code_challange_class28/comparisons.md)                                          |
 | 29 | **[[Mock interview] Insertion Sort](code_challange_class29/insertion_sort.md)**               |
 | 30 | [hashtable](code_challange_class30/hashtable.md)                                              |
-| 31 | [hashmap repeated word](code_challange_class31/hashmap_repeated_word.md)                          |
-| 26 |                           |
+| 31 | [hashmap repeated word](code_challange_class31/hashmap_repeated_word.md)                      |
+| 32 | [Tree Intersection](code_challange_class32/tree_intersection.md)                              |
 | 26 |                           |
 | 26 |                           |
 | 26 |                           |

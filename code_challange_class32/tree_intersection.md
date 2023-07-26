@@ -4,50 +4,42 @@ Author: **Almothana Almasri**
 
 ## Code Challenge: Class 32: Find common values in 2 binary trees.
 
-Write a function called repeated word that finds the first word to occur more than once in a string
-Arguments: string
-Return: string
+Find common values in 2 binary trees.
+Feature Tasks
+Write a function called tree_intersection that takes two binary trees as parameters.
+Using your Hashmap implementation as a part of your algorithm, return a set of values found in both trees.
+Input: Two binary trees
+Output: Common values in 2 binary trees.
 
 ## Whiteboard
 
-![whiteboardd](../assets/CC_31.png)
+![whiteboard](../assets/CC_32.png)
 
-## [Code is here](hashmap_repeated_word/hashmap_repeated_word.py)
+## [Code is here](tree_intersection/tree_intersection.py)
 
 ## Approach
 
-1. **Initialize Hashtable**: Create an empty Hashtable to store words that have been encountered.
-
-2. **Split Words**: Split the input string into words (assuming words are separated by spaces) and store them in a list.
-
-3. **Lowercase Conversion**: Convert each word to lowercase to perform a case-insensitive comparison and to ensure uniformity.
-
-4. **Iterate through Words**:
-    - a. **Clean Words**: For each word in the list of words, clean it by removing any non-alphanumeric characters. If the cleaned word is empty (e.g., when a word is just punctuation), ignore it and move to the next word.
-
-    - b. **Check for Repeated Words**: Check if the cleaned word is already in the Hashtable, which serves as a lookup table for repeated words.
-        - If the word is found in the Hashtable, it means it is the first repeated word in the input string. Return this word as the result.
-
-        - If the word is not found in the Hashtable, add it to the Hashtable, using the lowercase version of the word as the key for case-insensitive search.
-
-5. **Return Result**: If no repeated word is found after processing all words in the input string, return None as the result.
+1. Create a hash table to store the values from `tree1`.
+2. Perform a preorder traversal of `tree1`, starting from its root node, and store each node's value in the hash table using `hash_table.set(node.value, True)`.
+3. Create an empty set called `intersection` to store the common values found in both trees.
+4. Perform an inorder traversal of `tree2`, starting from its root node, and for each node, check if its value exists in the hash table using `hash_table.has(node.value)`.
+5. If the node's value exists in the hash table, add it to the `intersection` set using `intersection.add(node.value)`.
+6. After the traversal of `tree2` is complete, the `intersection` set will contain the values that exist in both `tree1` and `tree2`.
+7. Return the `intersection` set as the final result.
 
 ## Efficiency
 
-### Time Complexity: O(n + k)
+Time Complexity: O(n + m)
+- The function traverses both `tree1` and `tree2` once, resulting in a linear time complexity proportional to the number of nodes in both trees.
 
-- `n` is the number of unique words in the input string.
-- `k` is the number of words in the input string.
-
-### Space Complexity: O(n + m)
-
-- `n` is the number of unique words in the input string.
-- `m` is the length of the input string.
+Space Complexity: O(n)
+- The space complexity is determined by the hash table used to store the values from `tree1`, which can have up to O(n) space usage in the worst case.
+- The `intersection` set does not significantly impact the overall space complexity as it only stores common values, which is smaller than the hash table's potential size.
 
 ## Tests
 
-[They are linked here](tests/test_hashmap_repeated_word.py)
+[They are linked here](tests/test_tree_intersection.py)
 
 ```bash
-pytest -v code_challange_class31/tests/test_hashmap_repeated_word.py
+pytest -v code_challange_class32/tests/test_tree_intersection.py
 ```
