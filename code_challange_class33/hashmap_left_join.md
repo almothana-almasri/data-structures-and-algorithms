@@ -14,8 +14,6 @@ The purpose of this algorithm is to combine corresponding synonyms and antonyms 
 
 ## Approach
 
-Sure! Let's break down the algorithm of the given Python code step by step:
-
 Step 1: Create a function named `left_join` that takes two dictionaries, `synonyms` and `antonyms`, as input.
 
 Step 2: Initialize an empty list named `result` to store the final output.
