@@ -1,9 +1,14 @@
-from code_challange_class33.hashmap_left_join.hashtable import HashTable
-
-def left_join(synonyms_hash, antonyms_hash):
+def left_join(synonyms, antonyms):
     result = []
-    for key, value in synonyms_hash.items():
-        synonym = value
-        antonym = antonyms_hash.get(key, None)
-        result.append([key, synonym, antonym])
+
+    for key in synonyms:
+        synonym_value = synonyms[key]
+
+        if key in antonyms:
+            antonym_value = antonyms[key]
+        else:
+            antonym_value = None
+
+        result.append([key, synonym_value, antonym_value])
+
     return result
