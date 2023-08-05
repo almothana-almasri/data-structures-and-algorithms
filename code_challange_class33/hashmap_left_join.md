@@ -8,58 +8,31 @@ The purpose of this algorithm is to combine corresponding synonyms and antonyms 
 
 ## Whiteboard
 
-![whiteboard](../assets/CC_32.png)
+![whiteboard](../assets/CC_33.png)
 
 ## [Code is here](hashmap_left_join/hashmap_left_join.py)
 
 ## Approach
 
-Step 1: Create a function named `left_join` that takes two dictionaries, `synonyms` and `antonyms`, as input.
+1. Import the `HashTable` class from the `hashtable` module.
 
-Step 2: Initialize an empty list named `result` to store the final output.
+2. Define a function named `left_join` that takes two parameters: `synonyms` and `antonyms`. These parameters are assumed to be dictionaries containing key-value pairs, where keys represent words and values represent their synonyms and antonyms, respectively.
 
-Step 3: Iterate through the keys in the `synonyms` dictionary using a `for` loop:
+3. Create an empty `HashTable` object named `result`. This object will be used to store the left-joined results of the `synonyms` and `antonyms` dictionaries.
 
-```
-for key in synonyms:
-```
+4. Iterate through each key in the `synonyms` dictionary:
 
-Step 4: Retrieve the value associated with the current key in the `synonyms` dictionary:
+    a. Get the synonym associated with the current key from the `synonyms` dictionary using `synonyms.get(key)`.
+    
+    b. Get the antonym associated with the current key from the `antonyms` dictionary using `antonyms.get(key)`.
+    
+    c. Create a new list containing the synonym and antonym obtained in the previous steps.
 
-```
-    synonym_value = synonyms[key]
-```
+    d. Set the current key as the key and the list of synonym and antonym as the value in the `result` HashTable using `result.set(key, [synonyms.get(key), antonyms.get(key)])`.
 
-Step 5: Check if the current key exists in the `antonyms` dictionary:
+5. After iterating through all keys in the `synonyms` dictionary, the `result` HashTable will contain all the left-joined key-value pairs.
 
-```
-    if key in antonyms:
-```
-
-Step 6: If the key exists in the `antonyms` dictionary, get the value associated with that key:
-
-```
-        antonym_value = antonyms[key]
-```
-
-Step 7: If the key doesn't exist in the `antonyms` dictionary, set the `antonym_value` to `None`:
-
-```
-    else:
-        antonym_value = None
-```
-
-Step 8: Append a list containing the key, `synonym_value`, and `antonym_value` to the `result` list:
-
-```
-    result.append([key, synonym_value, antonym_value])
-```
-
-Step 9: After iterating through all keys in the `synonyms` dictionary, return the `result` list as the final output:
-
-```
-return result
-```
+6. Return the `result` HashTable, which contains the left-joined results of the `synonyms` and `antonyms` dictionaries.
 
 ## Efficiency
 
