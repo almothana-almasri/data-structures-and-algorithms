@@ -1,51 +1,39 @@
 from code_challange_class33.hashmap_left_join.hashmap_left_join import left_join
 from code_challange_class33.hashmap_left_join.hashtable import HashTable
+import pytest
 
-def test_left_join_basic():
-    synonyms_hashmap = {
-        'diligent': 'employed',
-        'fond': 'enamored',
-        'guide': 'usher',
-        'outfit': 'garb',
-        'wrath': 'anger'
-    }
+# Test when there are matching keys in synonyms and antonyms
+def test_left_join_matching_keys():
+    synonyms = {'happy': 'joyful', 'sad': 'unhappy', 'fast': 'quick'}
+    antonyms = {'happy': 'unhappy', 'tall': 'short', 'fast': 'slow'}
 
-    antonyms_hashmap = {
-        'diligent': 'idle',
-        'fond': 'averse',
-        'guide': 'follow',
-        'flow': 'jam',
-        'wrath': 'delight'
-    }
+    result = left_join(synonyms, antonyms)
 
-    result = left_join(synonyms_hashmap, antonyms_hashmap)
-    assert result == [
-        ["diligent", "employed", "idle"],
-        ["fond", "enamored", "averse"],
-        ["guide", "usher", "follow"],
-        ["outfit", "garb", None],
-        ["wrath", "anger", "delight"]
-    ]
+    assert result.get('happy') == ['joyful', 'unhappy']
+    assert result.get('fast') == ['quick', 'slow']
+    assert result.get('sad') == ['unhappy', None]
 
-def test_left_join_empty():
-    result = left_join({}, {})
-    assert result == []
+# Test when there are only synonyms and no antonyms
+def test_left_join_only_synonyms():
+    synonyms = {'hot': 'warm', 'cold': 'chilly', 'fast': 'rapid'}
+    antonyms = {}
 
-def test_left_join_missing_antonyms():
-    synonyms_hashmap = {
-        'diligent': 'employed',
-        'fond': 'enamored',
-        'guide': 'usher'
-    }
+    result = left_join(synonyms, antonyms)
 
-    antonyms_hashmap = {
-        'flow': 'jam',
-        'wrath': 'delight'
-    }
+    assert result.get('hot') == ['warm', None]
+    assert result.get('cold') == ['chilly', None]
+    assert result.get('fast') == ['rapid', None]
 
-    result = left_join(synonyms_hashmap, antonyms_hashmap)
-    assert result == [
-        ["diligent", "employed", None],
-        ["fond", "enamored", None],
-        ["guide", "usher", None]
-    ]
+# Test when there are only antonyms and no synonyms
+def test_left_join_only_antonyms():
+    synonyms = {}
+    antonyms = {'happy': 'unhappy', 'tall': 'short', 'fast': 'slow'}
+
+    result = left_join(synonyms, antonyms)
+
+    assert result.get('happy') == [None, 'unhappy']
+    assert result.get('tall') == [None, 'short']
+    assert result.get('fast') == [None, 'slow']
+
+if __name__ == "__main__":
+    pytest.main()
