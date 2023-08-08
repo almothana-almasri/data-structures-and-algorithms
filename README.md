@@ -30,8 +30,8 @@ This repository contains various code challanges about Data Structures and algor
 | 30 | [hashtable](code_challange_class30/hashtable.md)                                              |
 | 31 | [hashmap repeated word](code_challange_class31/hashmap_repeated_word.md)                      |
 | 32 | [Tree Intersection](code_challange_class32/tree_intersection.md)                              |
-| 26 |                           |
-| 26 |                           |
+| 33 | [A simplified LEFT JOIN for 2 Hashmaps.](code_challange_class33/hashmap_left_join.md)         |
+| 34 | **[[Mock interview] Determine the most common word in a book](code_challange_class34/readme.md)**|
 | 26 |                           |
 | 26 |                           |
 | 26 |                           |
