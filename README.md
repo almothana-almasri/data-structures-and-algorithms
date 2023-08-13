@@ -32,8 +32,8 @@ This repository contains various code challanges about Data Structures and algor
 | 32 | [Tree Intersection](code_challange_class32/tree_intersection.md)                              |
 | 33 | [A simplified LEFT JOIN for 2 Hashmaps.](code_challange_class33/hashmap_left_join.md)         |
 | 34 | **[[Mock interview] Determine the most common word in a book](code_challange_class34/readme.md)**|
-| 36 |                           |
-| 26 |                           |
+| 35 | [Graphs](code_challange_class35/graphs.md)                                                    |
+| 36 | [More Treeeeeees](code_challange_class36/readme.md)                                           |
 | 26 |                           |
 | 26 |                           |
 | 26 |                           |
