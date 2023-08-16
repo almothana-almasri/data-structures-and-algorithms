@@ -34,7 +34,7 @@ This repository contains various code challanges about Data Structures and algor
 | 34 | **[[Mock interview] Determine the most common word in a book](code_challange_class34/readme.md)**|
 | 35 | [Graphs](code_challange_class35/graphs.md)                                                    |
 | 36 | [More Treeeeeees](code_challange_class36/readme.md)                                           |
-| 26 |                           |
+| 37 | [Graph Business Trip](code_challange_class37/business_trip.md)                                |
 | 26 |                           |
 | 26 |                           |
 | 26 |                           |
