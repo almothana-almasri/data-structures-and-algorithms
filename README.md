@@ -35,7 +35,7 @@ This repository contains various code challanges about Data Structures and algor
 | 35 | [Graphs](code_challange_class35/graphs.md)                                                    |
 | 36 | [More Treeeeeees](code_challange_class36/readme.md)                                           |
 | 37 | [Graph Business Trip](code_challange_class37/business_trip.md)                                |
-| 26 |                           |
+| 38 | [depth first pre-order traversal on a graph](code_challange_class38/depth_first.md)           |
 | 26 |                           |
 | 26 |                           |
 | 26 |                           |
